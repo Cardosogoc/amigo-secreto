@@ -1,5 +1,5 @@
 let listaDeAmigos = [];
-
+let qtdLista
 function textoNaTela (marcador, texto) {
     let campo = document.querySelector(marcador);
     campo.innerHTML = texto;
@@ -20,9 +20,10 @@ function adicionarAmigo () {
             limparCampo();
         } else {
             listaDeAmigos.push(nomeAmigo);
-            limparCampo();  
+            limparCampo(); 
+            qtdLista = listaDeAmigos.length; 
             listaNaTela();
-            console.log(listaDeAmigos);
+            console.log(listaDeAmigos);    
         }
     } else {
         alert("Insira um valor para que possa ser adcionado!");
@@ -37,9 +38,17 @@ function limparCampo() {
 function listaNaTela () {
     let itemLista = document.getElementById("listaAmigos");
     itemLista.innerHTML = "";
-    let qtdLista = listaDeAmigos.length;
     for (let conta = 0; conta < qtdLista; conta++ ){
         itemLista.innerHTML += `<li>${listaDeAmigos[conta]}</li>`
     }
 }
 
+function sortearAmigo(){
+    let resultado = document.getElementById("resultado");
+    if(qtdLista != undefined){
+        let posicaoSorteado = Math.floor(Math.random() * qtdLista);
+        resultado.innerHTML = `<p>O amigo sorteado é ${listaDeAmigos[posicaoSorteado]}</p>`
+    } else {
+        alert("Insira amigos antes de sortear!");
+    }
+}
