@@ -1,4 +1,4 @@
-# Projeto: Desafio Amigo Secreto  🔢
+# Projeto: Desafio Amigo Secreto  🤝
 
 ## Sobre o Projeto  
 Projeto elaborado no **ONE** (*Oracle Next Education*), uma iniciativa da **Alura** em parceria com a **Oracle**.  
@@ -19,7 +19,7 @@ Esta página foi criada com foco em **lógica de programação**, abordando conc
 Contribuições são bem-vindas! Fique à vontade para abrir issues e pull requests.  
 
 ## Autor  
-![Minha Foto]([Imgur](https://i.imgur.com/ykzAlGq.jpg))
+![Minha Foto](https://i.imgur.com/TZYBI5V.jpg)
 
 **Nome:** Gabriel Cardoso  
 **Descrição:** Desenvolvedor com paixão por lógica de programação e tecnologias web. Este projeto foi criado com o objetivo de aplicar conhecimentos sobre programação e algoritmos, com foco no desenvolvimento de um sistema de sorteio para o "Amigo Secreto".
